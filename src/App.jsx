@@ -31,11 +31,22 @@ function App() {
         fetchStarships();
 
     }, []);
-    
+
     return (
 
         <div>
+
             <h1>Star Wars Starships API</h1>
+            <div className="card-container">
+
+                {starships.map((starship) => (
+
+                    <StarshipCard key={starships.url} starship={starship} />
+
+                ))}
+
+            </div>
+
         </div>
 
     );
