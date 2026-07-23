@@ -6,7 +6,7 @@ function StarshipCard({ starship }) {
 
     return (
 
-        <div>
+        <div className="starship-card">
 
             <p>{starship.name}</p>
 
