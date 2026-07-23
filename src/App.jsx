@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { getAllStarships } from "./services/sw-api";
-import StarshipCard from "./components.StarshipCard.jsx";
+import StarshipCard from "./components/StarshipCard.jsx";
 
 /* Requirements/Hints: Hold the starship objects in state with the useState hook. Use the useEffect hook. Be sure to update state with the setter function.
 .map() over each starship object in state to transform them into a <StarshipCard /> component. 
@@ -18,7 +18,7 @@ function App() {
             try {
 
                 const data = await getAllStarships();
-                setStarships(dtat);
+                setStarships(data);
                 
             } catch (error) {
 

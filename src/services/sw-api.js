@@ -13,7 +13,7 @@ export async function getAllStarships() {
     // const response = await fetch("${BASE_URL}starships/");
 
     let starships = [];
-    let nextUrl = "${BASE_URL}starships/";
+    let nextUrl = `${BASE_URL}starships/`;
 
     while (nextUrl) {
 
